@@ -1,0 +1,15 @@
+.mat-icon {
+  margin-right: 5px;
+}
+
+img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  padding: 2px;
+  border: 2px solid #00f;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

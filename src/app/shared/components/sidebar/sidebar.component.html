@@ -1,0 +1,37 @@
+<mat-nav-list>
+  <div class="card-profile py-3 ps-2">
+    <div class="card-profile">
+      <h2>{{ "mostafa kamel" | titlecase }}</h2>
+      <h4>
+        {{ "example@gmail.com" | titlecase }}
+      </h4>
+    </div>
+    <img
+      src="../../../../assets/images/sidebar/sidebar.jpg"
+      class="rounded-circle"
+      alt=""
+      width="152px"
+    />
+  </div>
+  <mat-divider></mat-divider>
+  <h2 matSubheader class="text-black-50">pages</h2>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/">{{
+    "dashboard" | titlecase
+  }}</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">{{
+    "posts" | titlecase
+  }}</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">{{
+    "articles" | titlecase
+  }}</a>
+  <mat-divider></mat-divider>
+  <h2 matSubheader class="text-black-50">{{ "tools" | titlecase }}</h2>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+    <mat-icon>import_contacts</mat-icon>
+    {{ "contacts" | titlecase }}
+  </a>
+  <a mat-list-item routerLink="/" routerLinkActive="list-item-active">
+    <mat-icon> contact_phone </mat-icon>
+    {{ "leads" | titlecase }}
+  </a>
+</mat-nav-list>
